@@ -5,6 +5,13 @@
     </li> 
 </ul> -->
 
+<div *ngIf="error" class="alert alert-danger animated fadeIn m-4">
+    <h3>Error</h3>
+    <p> {{mensajeError}} </p>
+</div>
+
 <app-loading *ngIf="loading"></app-loading>
+
+<h1 class="text-center m-5"><span class="badge badge-success">New Releases</span></h1>
 
 <app-tarjetas [items]="nuevasCanciones"></app-tarjetas>

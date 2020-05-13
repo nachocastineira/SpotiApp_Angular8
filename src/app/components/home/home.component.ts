@@ -22,14 +22,25 @@ export class HomeComponent {
   nuevasCanciones: any[] = [];
   loading: boolean; // Para mostrar el icono de loading mientras la info se esté cargando
 
+  error: boolean;
+  mensajeError: string;
+
   constructor( private spotify: SpotifyService ) {
 
+    this.error = false;
     this.loading = true;
 
     this.spotify.getNewReleases()
         .subscribe( (data: any) => {
            this.nuevasCanciones = data;
            this.loading = false; // Termina de cargar la info, saco el loading
+
+      }, ( errorServicio ) => { // Manejo de errores para el api rest invalida
+        this.loading = false;
+        this.error = true;
+        console.log(errorServicio);
+        this.mensajeError = errorServicio.error.error.message;
+
       } );
   }
 
