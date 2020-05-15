@@ -16,15 +16,15 @@ El objetivo de la práctica es crear un proyecto de cero y comprender los siguie
 
 ### :wrench: Tecnologias Utilizadas: ####
 
-* Proyecto desarrollado en lenguaje de programación __TypeScript__ y __ECMAScript 6__
+* Proyecto desarrollado en lenguaje de programación __TypeScript (v3.8.3)__ y __ECMAScript 6__
 
-* Utilización del framework __Angular 8__
+* Utilización del framework __Angular (v9.1.4)__ + __Node.js (v12)__
 
 * Utilización de API Rest de __Spotify for Developers__ https://developer.spotify.com/console/
 
 * FrontEnd desarrollado en __HTML5__ y __CSS3__
 
-* Utilización del framework __Bootstrap v4.1.3__
+* Utilización del framework __Bootstrap (v4.4.1)__
 
 ***
 ### :link: API Rest utilizadas - Spotify for Developers: ####
@@ -41,8 +41,12 @@ El objetivo de la práctica es crear un proyecto de cero y comprender los siguie
 
 ***
  ### :exclamation: Puntos importante para correr el proyecto:
+ 
+ * Clonar el proyecto y correr el siguiente comando en la raíz para instalar las dependecias:
 
- * Clonar el proyecto y correr el siguiente comando en la raíz:
+       npm install
+
+ * Continuar en la carpeta raíz y correr el siguiente comando:
 
        ng serve -o
 
